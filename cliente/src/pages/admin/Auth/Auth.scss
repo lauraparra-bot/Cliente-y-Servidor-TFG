@@ -1,0 +1,44 @@
+@import "~/src/scss/index.scss";
+
+.auth {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+
+    .logo {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 60px; // Cambia el tamaño de la fuente
+        color: #7D0633;
+        font-family: 'Myriad Pro', Arial, sans-serif;
+      }
+      
+     .auth__forms {
+        width: 800px;
+        margin-top: 120px;
+
+        .ui.menu {
+            .item {
+                width: 50%;
+                justify-content: center;
+                background-color: #fff !important;
+                border-radius: 0 !important;
+                border-top: 4px solid #7D0633 !important;
+                font-size: 18px;
+
+                .item.active {
+                    font-weight: normal;
+                    border-radius: 0 !important;
+                    border-top-color: $primary !important;
+                }
+            }
+        }
+      }
+      
+      
+}
